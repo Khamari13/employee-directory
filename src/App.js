@@ -1,7 +1,7 @@
 import React from 'react';
 // import logo from './logo.svg';
 import './App.css';
-import Data from './components/Data.jsx'
+import Data from './components/data.jsx'
 
 function App() {
   return (
