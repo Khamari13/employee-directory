@@ -53,22 +53,32 @@ export default class Data extends Component {
         return (
 
             <>
-                <input onChange={event => this.searchAgent(event.target.value)} />
-                <table className="data">
-                    <thread>
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">Name</th>
-                            <th scope="col">Email</th>
-                            <th scope="col">Cell Phone</th>
-                        </tr>
-                    </thread>
-                    <tbody>
+            <div className="container">
+            <h2>Employee Directory</h2>
+            <div className="jumbotron">
+            <input onChange={event => this.searchAgent(event.target.value)} />
+                <div className="data">
+                    <div>
+                        <div className="card1">
+                            <div className="col">#</div>
+                            <div className="col">Employee Image</div>
+                            <div className="col" style={{cursor: 'pointer'}}onClick={this.sortUsers}>
+                                Name {
+                                    this.state.orderList ==='asc'? (''):(this.state.orderList === 'des'? '':'')
+                                }
+                                </div>
+                            <div className="col">Email</div>
+                            <div className="col">Cell Phone</div>
+                        </div>
+                    </div>
+                    <div>
                         {this.state.activeList.map((user, index) => (
                             <DataBody user={user} index={index} key={user.cell} />
                         ))}
-                    </tbody>
-                </table>
+                    </div>
+                </div>
+            </div>
+            </div>
             </>
         );
     }
