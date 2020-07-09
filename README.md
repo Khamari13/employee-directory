@@ -2,9 +2,7 @@
 
 # In this app, my goal was to create an app that holds data about the people who work for a certain company using react and bootstrap. Appoaching this project I knew i would have to incorporate props and state.
 
-# Steps on how i approached the homework:
-
-# 1. I created my components to be sure
+## Employee Directory Link - https://immense-spire-37016.herokuapp.com/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -44,8 +42,6 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-
 
 ### Code Splitting
 
