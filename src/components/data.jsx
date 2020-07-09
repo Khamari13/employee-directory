@@ -19,8 +19,36 @@ export default class Data extends Component {
         );
         this.setState({
             activeList: newList
-        })
+        });
     };
+
+    sortUsers = () => {
+        const renderList = this.state.activeList.sort((a, b) => {
+            if (this.orderList === "asc" || !this.state.orderList) {
+                if (a.name.first > b.name.first) {
+                    return 1;
+                }
+                if (a.name.first < b.name.first) {
+                    return -1
+                }
+                return 0;
+            } else {
+                if (a.name.first < b.name.first) {
+                    return 1;
+                }
+                if (a.name.first > b.name.first) {
+                    return -1;
+                }
+                return 0;
+            }
+        });
+        const newOrder = "asc" === this.state.orderList ? "des" : "asc";
+        this.setState({
+            orderList: newOrder,
+            activeList: renderList
+        });
+    };
+
     render() {
         return (
 
