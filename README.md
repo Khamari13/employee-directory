@@ -1,3 +1,11 @@
+## Employee Directory
+
+# In this app, my goal was to create an app that holds data about the people who work for a certain company using react and bootstrap. Appoaching this project I knew i would have to incorporate props and state.
+
+# Steps on how i approached the homework:
+
+# 1. I created my components to be sure
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
